@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="The DEXIS private pilot portal. Installation, downloads and guidance for your evaluation.">
+  <title>Pilot portal · DEXIS by StreamFold</title>
+  <link rel="stylesheet" href="pilot.css">
+  <script src="service.js" defer></script>
+  <script src="pilot.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="StreamFold home"><svg viewBox="0 0 28 30" fill="none" aria-hidden="true"><path d="M2 3H24L14 14H3L14 26H26" stroke="currentColor" stroke-width="2.5"/></svg>StreamFold</a>
+    <span class="topbar-label">DEXIS <span>/</span> Private pilot</span>
+    <a class="back-link" href="../index.html">Back to website <span aria-hidden="true">↗</span></a>
+  </header>
+  <noscript><p class="notice">Enable JavaScript to explore the portal. Sign-in and downloads are not active yet. For pilot access, contact pilot@streamfolds.com.br.</p></noscript>
+  <main id="main">
+    <div id="login-view" class="login-layout">
+      <section class="login-story" aria-labelledby="intro-title">
+        <div class="eyebrow">Your DEXIS evaluation starts here</div>
+        <h1 id="intro-title">A better way<br>to move<br><span>what’s next.</span></h1>
+        <p>Your build, your data, your workflow. Everything you need to put content-aware transfer to the test.</p>
+        <div class="story-features"><span>Windows installer</span><span>Step-by-step guidance</span><span>Release notes</span></div>
+        <div class="story-footer"><strong>DEXIS</strong><span>Move big projects. Send less data.</span></div>
+      </section>
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="badge">Private access</div>
+        <h2 id="login-title">Welcome to the pilot.</h2>
+        <p class="muted">Use the email and password provided by StreamFold.</p>
+        <form id="login-form" method="post">
+          <label for="email">Work email</label>
+          <input id="email" type="email" autocomplete="username" placeholder="you@company.com" required maxlength="254" aria-describedby="login-message">
+          <div class="label-row"><label for="password">Password</label><button class="text-button" type="button" data-open-dialog="reset-dialog">Forgot password?</button></div>
+          <div class="password-field"><input id="password" type="password" autocomplete="current-password" required aria-describedby="login-message"><button type="button" data-toggle-password="password" aria-label="Show password" aria-pressed="false">Show</button></div>
+          <p class="form-message" id="login-message" role="status" aria-live="polite"></p>
+          <button type="submit" class="button primary full" id="sign-in" disabled>Sign in</button>
+        </form>
+        <p class="access-note">Access is issued directly to pilot participants.<br><a href="mailto:pilot@streamfolds.com.br?subject=DEXIS%20pilot%20access">Contact StreamFold to request access ↗</a></p>
+        <div class="preview-entry"><span>Portal preview</span><p>Sign-in and downloads are not active yet. Explore the workspace without an account.</p><a class="button secondary full" href="?preview=1">Explore the portal <span aria-hidden="true">→</span></a></div>
+      </section>
+    </div>
+
+    <div id="portal-view" hidden>
+      <div class="preview-banner"><div><strong>Portal preview</strong><span>Sample workspace · Sign-in, downloads and account changes are not active.</span></div><a href="./">Exit preview</a></div>
+      <div class="workspace">
+        <aside class="sidebar">
+          <div class="workspace-name"><div class="workspace-icon" aria-hidden="true">D</div><div><strong>DEXIS pilot</strong><span>Preview workspace</span></div></div>
+          <nav class="workspace-nav" aria-label="Pilot workspace">
+            <a href="#overview" data-page="overview" aria-current="page"><span aria-hidden="true">01</span>Overview</a>
+            <a href="#downloads" data-page="downloads"><span aria-hidden="true">02</span>Downloads</a>
+            <a href="#guide" data-page="guide"><span aria-hidden="true">03</span>Getting started</a>
+            <a href="#releases" data-page="releases"><span aria-hidden="true">04</span>Release notes</a>
+            <a href="#support" data-page="support"><span aria-hidden="true">05</span>Support</a>
+            <a href="#account" data-page="account"><span aria-hidden="true">06</span>Account</a>
+          </nav>
+          <div class="sidebar-foot"><span>Controlled technical evaluation</span><strong>DEXIS 0.4.0 Beta 2</strong><a href="./">Return to sign in</a></div>
+        </aside>
+        <div class="workspace-content">
+          <section id="overview" class="page-panel" aria-labelledby="overview-title">
+            <div class="page-heading"><div><div class="eyebrow">Your pilot workspace</div><h1 id="overview-title" tabindex="-1">Ready for the next transfer.</h1><p>Install DEXIS, run your first workflow and see what the next version can reuse.</p></div><span class="badge">Preview</span></div>
+            <div class="overview-grid">
+              <article class="featured-download">
+                <div class="release-top"><span class="product-label">DEXIS</span><span class="badge">Beta 2</span></div>
+                <h2>Start with the Windows installer.</h2><p>Includes the application, Python runtime and native Rust core. No separate developer tools required.</p>
+                <div class="release-facts"><span>Windows 10+ · 64-bit</span><span>Version 0.4.0</span></div>
+                <button class="button primary" type="button" disabled>Download for Windows <span aria-hidden="true">↓</span></button><p class="small download-note">Downloads open after pilot access is activated.</p>
+                <a class="inline-link" href="#downloads">View packages and checksums →</a>
+              </article>
+              <article class="start-list"><h2>Your first evaluation</h2><a href="#guide"><span class="step-dot">1</span><div><strong>Install and check DEXIS</strong><p>Open a new terminal and confirm the version.</p></div><span aria-hidden="true">↗</span></a><a href="#guide"><span class="step-dot">2</span><div><strong>Pack a sample project</strong><p>Inspect, verify and reconstruct your files.</p></div><span aria-hidden="true">↗</span></a><a href="#guide"><span class="step-dot">3</span><div><strong>Transfer the next version</strong><p>Observe content reuse at the receiver.</p></div><span aria-hidden="true">↗</span></a></article>
+            </div>
+            <div class="section-label">Make the evaluation useful</div>
+            <div class="insight-row"><article><h3>Use representative data.</h3><p>Choose a non-critical project and a later revision. Keep independent copies of the originals.</p></article><article><h3>Measure the whole workflow.</h3><p>Compare packing time, unique content, stored bytes and repeated-transfer behavior.</p></article><article><h3>Share what you find.</h3><p>Bring your results and workflow questions to StreamFold.</p><a class="inline-link" href="#support">Contact support →</a></article></div>
+          </section>
+
+          <section id="downloads" class="page-panel" aria-labelledby="downloads-title" hidden>
+            <div class="page-heading"><div><div class="eyebrow">Builds and packages</div><h1 id="downloads-title" tabindex="-1">Download DEXIS.</h1><p>The current release for controlled Windows evaluation.</p></div><span class="badge">0.4.0 Beta 2</span></div>
+            <div class="notice">This is a preview of the download area. No installer or private download link is exposed here.</div>
+            <div class="package-list">
+              <article class="package"><div class="file-icon" aria-hidden="true">EXE</div><div class="package-info"><h2>Windows installer <span class="recommended">Recommended</span></h2><p>DEXIS-Setup.exe · 10.26 MB · Windows 10 or later, 64-bit</p><span class="small">Includes the standalone application and native core.</span></div><button type="button" class="button primary" disabled>Download ↓</button></article>
+              <article class="package"><div class="file-icon" aria-hidden="true">ZIP</div><div class="package-info"><h2>Portable package</h2><p>No portable archive has been assigned to this pilot yet.</p><span class="small">Availability will be confirmed with your pilot release.</span></div><button type="button" class="button secondary" disabled>Not available</button></article>
+              <article class="package"><div class="file-icon" aria-hidden="true">SHA</div><div class="package-info"><h2>Installer checksum</h2><p>SHA-256 · DEXIS-Setup.exe · v0.4.0-beta.2</p><code class="hash" id="installer-hash">115a50fb70943e687ba8eb0c6e60c5fdb33bbb29ab21fefb164b7ce7c38660cd</code></div><button type="button" class="button secondary" data-copy="installer-hash">Copy hash</button></article>
+            </div>
+            <details class="guide-detail"><summary>Before you install</summary><div><p>Read and accept the Beta EULA provided with the installer. Administrative permission is required. Current Windows binaries are unsigned; contact StreamFold if your organization requires a signed application.</p><p>Verify the downloaded installer in PowerShell and compare the result with the SHA-256 above.</p><div class="code-block"><div class="code-head"><span>PowerShell</span><button type="button" data-copy="hash-command">Copy</button></div><pre><code id="hash-command">Get-FileHash .\DEXIS-Setup.exe -Algorithm SHA256</code></pre></div></div></details>
+            <p class="small section-note">Release date: 9 September 2026. The application reports DEXIS 0.4.0; the distribution is tagged Beta 2.</p>
+          </section>
+
+          <section id="guide" class="page-panel" aria-labelledby="guide-title" hidden>
+            <div class="page-heading"><div><div class="eyebrow">From installation to your second transfer</div><h1 id="guide-title" tabindex="-1">Getting started.</h1><p>Run a local evaluation first. The commands below use PowerShell on Windows.</p></div></div>
+            <div class="notice">Use a non-critical sample and keep independent source copies. Replace example paths with your own.</div>
+            <details class="guide-detail" open><summary><span class="step-dot">1</span>Install and verify the application</summary><div><p>Run DEXIS-Setup.exe, review the license and complete installation. Open a <strong>new PowerShell window</strong> so the updated PATH takes effect.</p><div class="code-block"><div class="code-head"><span>PowerShell</span><button type="button" data-copy="install-command">Copy</button></div><pre><code id="install-command">dexis --version
+dexis --help</code></pre></div><p class="small">Expected version: DEXIS 0.4.0. Python, Rust and pip are bundled or unnecessary for installer users.</p></div></details>
+            <details class="guide-detail"><summary><span class="step-dot">2</span>Pack, inspect and reconstruct a sample</summary><div><p>In a working folder, create a <code>sample</code> directory with copies of a few representative files. DEXIS writes <code>sample-v1.dxis</code> as a directory containing the complete package.</p><div class="code-block"><div class="code-head"><span>PowerShell · sample project</span><button type="button" data-copy="pack-command">Copy</button></div><pre><code id="pack-command">dexis pack .\sample -o .\sample-v1.dxis
+dexis inspect .\sample-v1.dxis
+dexis verify .\sample-v1.dxis --level full
+dexis unpack .\sample-v1.dxis -d .\restored-v1</code></pre></div><p>Inspect separates logical bytes, unique raw bytes and stored chunk bytes. Deduplication and compression are different savings mechanisms.</p><p class="small">The input root name is preserved: your files will be reconstructed under restored-v1\sample.</p></div></details>
+            <details class="guide-detail"><summary><span class="step-dot">3</span>Start a local receiver</summary><div><p>For the first test, run the receiver on the same computer. Set a long random token of your own. Use the <strong>same token in both terminal windows</strong>; the example text below must be replaced.</p><div class="code-block"><div class="code-head"><span>PowerShell · terminal 1</span><button type="button" data-copy="receiver-command">Copy</button></div><pre><code id="receiver-command">$env:DEXIS_TOKEN = "REPLACE_WITH_YOUR_OWN_LONG_RANDOM_SECRET"
+dexis serve --root .\received --host 127.0.0.1 --port 8741</code></pre></div><p>Keep this window running. In a second PowerShell window, open the folder containing your sample package and send it:</p><div class="code-block"><div class="code-head"><span>PowerShell · terminal 2</span><button type="button" data-copy="sender-command">Copy</button></div><pre><code id="sender-command">$env:DEXIS_TOKEN = "REPLACE_WITH_YOUR_OWN_LONG_RANDOM_SECRET"
+dexis send .\sample-v1.dxis http://127.0.0.1:8741</code></pre></div><p class="small">This HTTP example binds to loopback for testing on one computer. Transfers between computers need a planned receiver setup; use HTTPS on untrusted networks. <a class="inline-link" href="#support">Ask StreamFold about your deployment.</a></p></div></details>
+            <details class="guide-detail"><summary><span class="step-dot">4</span>Send the next version</summary><div><p>Keep the receiver and its <code>received</code> directory. Edit a few files in your sample, then create a <strong>new package</strong> and send it from the same second terminal.</p><div class="code-block"><div class="code-head"><span>PowerShell · terminal 2</span><button type="button" data-copy="revision-command">Copy</button></div><pre><code id="revision-command">dexis pack .\sample -o .\sample-v2.dxis
+dexis inspect .\sample-v2.dxis
+dexis verify .\sample-v2.dxis --level full
+dexis send .\sample-v2.dxis http://127.0.0.1:8741</code></pre></div><p>DEXIS checks validated content already at the receiver and uploads missing chunks. Compare the two transfers. Actual reuse depends on matching raw bytes, not visual similarity between files.</p><p class="small">Keep received packages and the shared cache intact. To resume an interrupted send, rerun the send command for that same package.</p></div></details>
+            <details class="guide-detail"><summary><span class="step-dot">5</span>Record the results</summary><div><p>Record source size, packing time, unique raw bytes, stored bytes, transfer time and observed reuse for each version. Include DEXIS version, Windows version and whether the test used loopback or a network.</p><p>Loopback is useful for verifying the workflow. Measure your actual connection separately before drawing conclusions about network performance.</p><a class="button secondary" href="#support">Share results with StreamFold →</a></div></details>
+          </section>
+
+          <section id="releases" class="page-panel" aria-labelledby="releases-title" hidden>
+            <div class="page-heading"><div><div class="eyebrow">What changed</div><h1 id="releases-title" tabindex="-1">Release notes.</h1><p>Changes relevant to your evaluation and installation.</p></div></div>
+            <article class="release-entry"><div class="release-date"><span>9 September 2026</span><span class="badge">Current pilot build</span></div><h2>DEXIS 0.4.0 Beta 2</h2><p>Licensing and installation updates for controlled evaluation.</p><ul><li>Proprietary license and Beta EULA included with the application.</li><li>Interactive Windows installer requires EULA acceptance.</li><li>Third-party license notices included in the installed application.</li><li>Windows installers rebuilt and SHA-256 checksums regenerated.</li></ul><p class="small">The installed application continues to report DEXIS 0.4.0.</p><a class="inline-link" href="#downloads">View release packages →</a></article>
+            <article class="release-entry"><div class="release-date"><span>9 September 2026</span><span class="small">Earlier pre-release</span></div><h2>DEXIS 0.4.0 Beta 1</h2><p>Content-defined deduplication, adaptive RAW/Zstandard compression, resumable transfers and receiver-side reuse across project versions.</p><p class="small">Use Beta 2 for new evaluations. Previous binaries are not distributed through this preview.</p></article>
+            <div class="notice">DEXIS remains pre-release software. This pilot does not include a production SLA or an independent security audit.</div>
+          </section>
+
+          <section id="support" class="page-panel" aria-labelledby="support-title" hidden>
+            <div class="page-heading"><div><div class="eyebrow">Work directly with StreamFold</div><h1 id="support-title" tabindex="-1">Let’s make your pilot useful.</h1><p>Get help with installation, transfer setup or evaluating the results.</p></div></div>
+            <div class="support-grid"><article class="support-card"><h2>Ask a question.</h2><p>Tell us what you want to evaluate and where you need help.</p><a class="button primary" href="mailto:pilot@streamfolds.com.br?subject=DEXIS%20pilot%20support">Contact support ↗</a><span class="small">Opens your email application.</span></article><article class="support-card"><h2>Share an issue.</h2><p>Include your DEXIS version, Windows version, command and the error you received. Remove credentials and confidential paths from logs.</p><a class="button secondary" href="mailto:pilot@streamfolds.com.br?subject=DEXIS%20pilot%20issue">Report an issue ↗</a><span class="small">No files are uploaded through this preview.</span></article></div>
+            <div class="section-label">Common questions</div>
+            <details class="guide-detail"><summary>PowerShell cannot find the dexis command.</summary><div><p>Open a new terminal after installation. If the command is still unavailable, confirm the installation completed and contact StreamFold with the installer version and error message.</p></div></details>
+            <details class="guide-detail"><summary>The second transfer did not reuse much content.</summary><div><p>Reuse requires identical raw chunks at the receiver. Confirm that both transfers use the same receiver root and that earlier content is still present. Compressed or re-encoded source files can change substantially between revisions.</p></div></details>
+            <details class="guide-detail"><summary>How do I uninstall DEXIS?</summary><div><p>In Windows, open Installed apps, select DEXIS and choose Uninstall. You can also use the Uninstall DEXIS entry in the Start Menu.</p></div></details>
+          </section>
+
+          <section id="account" class="page-panel" aria-labelledby="account-title" hidden>
+            <div class="page-heading"><div><div class="eyebrow">Your pilot access</div><h1 id="account-title" tabindex="-1">Account.</h1><p>Manage the credentials used for your company’s evaluation.</p></div></div>
+            <div class="account-card"><dl><div><dt>Company</dt><dd>Preview workspace</dd></div><div><dt>Work email</dt><dd>No account connected</dd></div><div><dt>Pilot access</dt><dd><span class="badge">Not activated</span></dd></div></dl><div class="account-actions"><div><h2>Password</h2><p>Change your initial password when your account is activated.</p></div><button class="button secondary" type="button" data-open-dialog="password-dialog">Change password</button></div></div>
+            <p class="small section-note">No credentials or account changes are saved in this preview.</p>
+          </section>
+          <footer class="workspace-footer"><span>StreamFold · DEXIS private pilot</span><a href="mailto:pilot@streamfolds.com.br">Contact StreamFold ↗</a></footer>
+        </div>
+      </div>
+    </div>
+  </main>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><div class="dialog-head"><h2 id="reset-title">Reset your password.</h2><button type="button" data-close-dialog aria-label="Close password reset">×</button></div><p>Request a reset link for your pilot account.</p><form id="reset-form" method="post"><label for="reset-email">Work email</label><input id="reset-email" type="email" required autocomplete="email" placeholder="you@company.com"><p class="form-message" id="reset-message" role="status"></p><button type="submit" class="button primary full" disabled>Send reset link</button></form><p class="small">Password reset is not active yet. <a href="mailto:pilot@streamfolds.com.br?subject=DEXIS%20pilot%20access">Contact StreamFold for help.</a></p></dialog>
+  <dialog id="password-dialog" aria-labelledby="password-title"><div class="dialog-head"><h2 id="password-title">Change your password.</h2><button type="button" data-close-dialog aria-label="Close password change">×</button></div><p>Choose a password for your pilot account.</p><form id="password-form" method="post"><label for="current-password">Current password</label><input id="current-password" type="password" autocomplete="current-password" required><label for="new-password">New password</label><input id="new-password" type="password" autocomplete="new-password" minlength="12" required aria-describedby="password-help"><p class="small" id="password-help">Use at least 12 characters.</p><label for="confirm-password">Confirm new password</label><input id="confirm-password" type="password" autocomplete="new-password" minlength="12" required><p class="form-message" id="password-message" role="status"></p><button type="submit" class="button primary full" disabled>Save new password</button></form><p class="small">Changes are not saved in preview mode.</p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
