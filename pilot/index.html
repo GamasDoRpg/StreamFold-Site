@@ -58,16 +58,16 @@
             <a href="#support" data-page="support"><span aria-hidden="true">05</span>Support</a>
             <a href="#account" data-page="account"><span aria-hidden="true">06</span>Account</a>
           </nav>
-          <div class="sidebar-foot"><span>Controlled technical evaluation</span><strong>DEXIS 0.4.0 Beta 2</strong><a href="./">Return to sign in</a></div>
+          <div class="sidebar-foot"><span>Controlled technical evaluation</span><strong>DEXIS 0.9.0 Beta</strong><a href="./">Return to sign in</a></div>
         </aside>
         <div class="workspace-content">
           <section id="overview" class="page-panel" aria-labelledby="overview-title">
             <div class="page-heading"><div><div class="eyebrow">Your pilot workspace</div><h1 id="overview-title" tabindex="-1">Ready for the next transfer.</h1><p>Install DEXIS, run your first workflow and see what the next version can reuse.</p></div><span class="badge">Preview</span></div>
             <div class="overview-grid">
               <article class="featured-download">
-                <div class="release-top"><span class="product-label">DEXIS</span><span class="badge">Beta 2</span></div>
+                <div class="release-top"><span class="product-label">DEXIS</span><span class="badge">Beta</span></div>
                 <h2>Start with the Windows installer.</h2><p>Includes the application, Python runtime and native Rust core. No separate developer tools required.</p>
-                <div class="release-facts"><span>Windows 10+ · 64-bit</span><span>Version 0.4.0</span></div>
+                <div class="release-facts"><span>Windows 10+ · 64-bit</span><span>Version 0.9.0</span></div>
                 <button class="button primary" type="button" disabled>Download for Windows <span aria-hidden="true">↓</span></button><p class="small download-note">Downloads open after pilot access is activated.</p>
                 <a class="inline-link" href="#downloads">View packages and checksums →</a>
               </article>
@@ -78,22 +78,22 @@
           </section>
 
           <section id="downloads" class="page-panel" aria-labelledby="downloads-title" hidden>
-            <div class="page-heading"><div><div class="eyebrow">Builds and packages</div><h1 id="downloads-title" tabindex="-1">Download DEXIS.</h1><p>The current release for controlled Windows evaluation.</p></div><span class="badge">0.4.0 Beta 2</span></div>
+            <div class="page-heading"><div><div class="eyebrow">Builds and packages</div><h1 id="downloads-title" tabindex="-1">Download DEXIS.</h1><p>The current release for controlled Windows evaluation.</p></div><span class="badge">0.9.0 Beta</span></div>
             <div class="notice">This is a preview of the download area. No installer or private download link is exposed here.</div>
             <div class="package-list">
-              <article class="package"><div class="file-icon" aria-hidden="true">EXE</div><div class="package-info"><h2>Windows installer <span class="recommended">Recommended</span></h2><p>DEXIS-Setup.exe · 10.26 MB · Windows 10 or later, 64-bit</p><span class="small">Includes the standalone application and native core.</span></div><button type="button" class="button primary" disabled>Download ↓</button></article>
+              <article class="package"><div class="file-icon" aria-hidden="true">EXE</div><div class="package-info"><h2>Windows installer <span class="recommended">Recommended</span></h2><p>DEXIS-Setup.exe · 10.32 MB · Windows 10 or later, 64-bit</p><span class="small">Includes the standalone application and native core.</span></div><button type="button" class="button primary" disabled>Download ↓</button></article>
               <article class="package"><div class="file-icon" aria-hidden="true">ZIP</div><div class="package-info"><h2>Portable package</h2><p>No portable archive has been assigned to this pilot yet.</p><span class="small">Availability will be confirmed with your pilot release.</span></div><button type="button" class="button secondary" disabled>Not available</button></article>
-              <article class="package"><div class="file-icon" aria-hidden="true">SHA</div><div class="package-info"><h2>Installer checksum</h2><p>SHA-256 · DEXIS-Setup.exe · v0.4.0-beta.2</p><code class="hash" id="installer-hash">115a50fb70943e687ba8eb0c6e60c5fdb33bbb29ab21fefb164b7ce7c38660cd</code></div><button type="button" class="button secondary" data-copy="installer-hash">Copy hash</button></article>
+              <article class="package"><div class="file-icon" aria-hidden="true">SHA</div><div class="package-info"><h2>Installer checksum</h2><p>SHA-256 · DEXIS-Setup.exe · v0.9.0-beta</p><code class="hash" id="installer-hash">e17c1ea76c5d85e26d73397a6e695dacf81ac022e16ad0f63078e64a8248edf2</code></div><button type="button" class="button secondary" data-copy="installer-hash">Copy hash</button></article>
             </div>
             <details class="guide-detail"><summary>Before you install</summary><div><p>Read and accept the Beta EULA provided with the installer. Administrative permission is required. Current Windows binaries are unsigned; contact StreamFold if your organization requires a signed application.</p><p>Verify the downloaded installer in PowerShell and compare the result with the SHA-256 above.</p><div class="code-block"><div class="code-head"><span>PowerShell</span><button type="button" data-copy="hash-command">Copy</button></div><pre><code id="hash-command">Get-FileHash .\DEXIS-Setup.exe -Algorithm SHA256</code></pre></div></div></details>
-            <p class="small section-note">Release date: 9 September 2026. The application reports DEXIS 0.4.0; the distribution is tagged Beta 2.</p>
+            <p class="small section-note">Release date: 7 October 2026. The application reports DEXIS 0.9.0; the distribution is Beta software.</p>
           </section>
 
           <section id="guide" class="page-panel" aria-labelledby="guide-title" hidden>
             <div class="page-heading"><div><div class="eyebrow">From installation to your second transfer</div><h1 id="guide-title" tabindex="-1">Getting started.</h1><p>Run a local evaluation first. The commands below use PowerShell on Windows.</p></div></div>
             <div class="notice">Use a non-critical sample and keep independent source copies. Replace example paths with your own.</div>
             <details class="guide-detail" open><summary><span class="step-dot">1</span>Install and verify the application</summary><div><p>Run DEXIS-Setup.exe, review the license and complete installation. Open a <strong>new PowerShell window</strong> so the updated PATH takes effect.</p><div class="code-block"><div class="code-head"><span>PowerShell</span><button type="button" data-copy="install-command">Copy</button></div><pre><code id="install-command">dexis --version
-dexis --help</code></pre></div><p class="small">Expected version: DEXIS 0.4.0. Python, Rust and pip are bundled or unnecessary for installer users.</p></div></details>
+dexis --help</code></pre></div><p class="small">Expected version: DEXIS 0.9.0. Python, Rust and pip are bundled or unnecessary for installer users.</p></div></details>
             <details class="guide-detail"><summary><span class="step-dot">2</span>Pack, inspect and reconstruct a sample</summary><div><p>In a working folder, create a <code>sample</code> directory with copies of a few representative files. DEXIS writes <code>sample-v1.dxis</code> as a directory containing the complete package.</p><div class="code-block"><div class="code-head"><span>PowerShell · sample project</span><button type="button" data-copy="pack-command">Copy</button></div><pre><code id="pack-command">dexis pack .\sample -o .\sample-v1.dxis
 dexis inspect .\sample-v1.dxis
 dexis verify .\sample-v1.dxis --level full
@@ -110,8 +110,8 @@ dexis send .\sample-v2.dxis http://127.0.0.1:8741</code></pre></div><p>DEXIS che
 
           <section id="releases" class="page-panel" aria-labelledby="releases-title" hidden>
             <div class="page-heading"><div><div class="eyebrow">What changed</div><h1 id="releases-title" tabindex="-1">Release notes.</h1><p>Changes relevant to your evaluation and installation.</p></div></div>
-            <article class="release-entry"><div class="release-date"><span>9 September 2026</span><span class="badge">Current pilot build</span></div><h2>DEXIS 0.4.0 Beta 2</h2><p>Licensing and installation updates for controlled evaluation.</p><ul><li>Proprietary license and Beta EULA included with the application.</li><li>Interactive Windows installer requires EULA acceptance.</li><li>Third-party license notices included in the installed application.</li><li>Windows installers rebuilt and SHA-256 checksums regenerated.</li></ul><p class="small">The installed application continues to report DEXIS 0.4.0.</p><a class="inline-link" href="#downloads">View release packages →</a></article>
-            <article class="release-entry"><div class="release-date"><span>9 September 2026</span><span class="small">Earlier pre-release</span></div><h2>DEXIS 0.4.0 Beta 1</h2><p>Content-defined deduplication, adaptive RAW/Zstandard compression, resumable transfers and receiver-side reuse across project versions.</p><p class="small">Use Beta 2 for new evaluations. Previous binaries are not distributed through this preview.</p></article>
+            <article class="release-entry"><div class="release-date"><span>7 October 2026</span><span class="badge">Current pilot build</span></div><h2>DEXIS 0.9.0 Beta</h2><p>Operational hardening and validated Windows packaging for controlled evaluation.</p><ul><li>Atomic publication and stronger recovery behavior for interrupted workflows.</li><li>Receiver cache controls, bounded retries and improved source-change detection.</li><li>Native Rust and Python fallback test suites validated on Windows.</li><li>Windows installer build, installation, removal and round-trip smoke tests passed.</li></ul><p class="small">The installed application reports DEXIS 0.9.0.</p><a class="inline-link" href="#downloads">View release packages →</a></article>
+            <article class="release-entry"><div class="release-date"><span>9 September 2026</span><span class="small">Earlier pre-release</span></div><h2>DEXIS 0.4.0 Beta 1</h2><p>Content-defined deduplication, adaptive RAW/Zstandard compression, resumable transfers and receiver-side reuse across project versions.</p><p class="small">Use DEXIS 0.9.0 for new evaluations. Previous binaries are not distributed through this preview.</p></article>
             <div class="notice">DEXIS remains pre-release software. This pilot does not include a production SLA or an independent security audit.</div>
           </section>
 
