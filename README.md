@@ -43,7 +43,7 @@ Não há autenticação nem autorização implementadas. O formulário de login 
 
 Nenhuma senha é persistida, enviada ou registrada. Os formulários não têm campos nomeados para envio nativo e só habilitam a submissão depois que seus handlers estão conectados. Todos os métodos de `PilotService` rejeitam com `PILOT_NOT_CONNECTED`.
 
-Os botões de download estão desativados e não há instaladores ou links privados no repositório. A versão e o SHA-256 mostrados são uma fotografia do release `v0.4.0-beta.2`, publicado em 9 de setembro de 2026. Nenhum ZIP portátil foi encontrado nesse release, portanto sua linha indica indisponibilidade. Alterar o visual ou adicionar `?preview=1` não representa autenticação.
+Os botões de download estão desativados e não há instaladores ou links privados no repositório. A versão e o SHA-256 mostrados acompanham o build Windows validado do DEXIS `0.9.0`, gerado em 7 de outubro de 2026. Nenhum ZIP portátil está exposto pelo portal, portanto sua linha indica indisponibilidade. Alterar o visual ou adicionar `?preview=1` não representa autenticação.
 
 ## Próxima etapa: Supabase
 
@@ -64,7 +64,7 @@ Antes de ativar contas reais, remover a entrada pública da prévia ou isolá-la
 
 ## Documentação do produto
 
-O guia acompanha os comandos documentados do DEXIS 0.4: instalação no Windows, pack/inspect/verify/unpack, receptor local em loopback e transferência de duas versões com o mesmo token e diretório do receptor. Ele não provisiona um receptor de produção. As condições de licença são as fornecidas com o instalador.
+O guia acompanha os comandos documentados do DEXIS 0.9.0: instalação no Windows, pack/inspect/verify/unpack, receptor local em loopback e transferência de duas versões com o mesmo token e diretório do receptor. Ele não provisiona um receptor de produção. As condições de licença são as fornecidas com o instalador.
 
 ## Validação
 
